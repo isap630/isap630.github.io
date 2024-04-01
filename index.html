@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <title>Arlenis's Website</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- Meta tag to make this a responsive web page -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+    <div>
+		<!-- Title-->
+        
+        <div class="web-title">
+            <h1>Arlenis Pena</h1>
+        </div>
+
+        <div id="mobileNav">
+            <div class="mobileNavBar">
+                <div id="siteName">
+                    <h1>Arlenis Pena</h1>
+                </div>
+                <div id="hamburgerDiv">
+                    <!--<a href="#" onclick="myDropdownFunction()">&#9776;</a>-->
+                    <button id="hamburgerBtn" onclick="myDropdownFunction()">&#9776;</button>
+                </div>
+  
+            </div>
+  
+            <div id="theLinks">
+                <a href="index.html">Home</a>
+                <a href="arlenis-pena_hw-2.html">My Photography</a>
+                <a href="web-poem.html">Web Poem</a>
+                <a href="contact-page.html">Contact</a>
+                <a href="midterm/home.html">Midterm</a>
+            </div>
+        </div>
+
+		<!-- Navbar-->
+        <div class="nav-bar">
+            <h3>
+                <li class="nav-link"><a href="index.html">Home</a></li>
+				<li class="nav-link"><a href="arlenis-pena_hw-2.html">My Photography</a></li>
+                <li class="nav-link"><a href="web-poem.html">Web Poem</a></li>
+                <li class="nav-link"><a href="contact-page.html">Contact</a></li>
+                <li class="nav-link"><a href="midterm/home.html">Midterm</a></li>
+            </h3>
+        </div> 
+        
+
+		<!-- Introduction-->
+        <img id="greeting-gif" src="videos/greeting-bunny.gif" width="50%" alt="happy bunny gif" />
+        <div>
+            <p>
+                My name is Arlenis, I'm a junior majoring in Emerging Media and minoring in Computer Science.
+                I've always been into design and tech which is why I'm aspiring to become a UX/UI designer or
+                researcher.
+                Learning how to code using HTML, CSS, and Javascript can provide me a understanding of how websites are
+                made,
+                and their layouts, which is a valuable to know especially when it comes to digital user experience.
+            </p>
+            <p>
+                Although last semester I was able to create a porfolio website for MEDP 150, I want to learn how to
+                properly
+                style and organize my code in a more efficient manner. I also want to learn how create a website more
+                professionally.
+            </p>
+        </div>
+
+        <a href="https://arlenis-pena.glitch.me/index.html">My previous work using HTML/CSS</a>
+
+    </div>
+    </body>
+</html>
+
+<script>
+    function myDropdownFunction() {
+      var linksDiv = document.getElementById("theLinks");
+      if (linksDiv.style.display === "block") {
+        linksDiv.style.display = "none";
+      }
+		else {
+        linksDiv.style.display = "block";
+      }
+    }
+</script>

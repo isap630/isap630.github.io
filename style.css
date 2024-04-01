@@ -1,0 +1,157 @@
+body{
+    font-family: verdana;
+    background-color: #FFE8D6;
+}
+
+/* Title + Navbar */
+.web-title{
+    font-family: Didot;
+    color: #FF9F1C;
+    text-align: center;
+}
+
+.nav-bar{
+    list-style-type: none;
+    font-family: didot;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.nav-bar li{
+    float: left;
+}
+
+.nav-link a{
+    display: block;
+    float: left;
+    color: #CB997E;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 16px;
+}
+.nav-link a:hover{
+    color: black;
+}
+
+/* Home */
+#greeting-gif{
+    display: block;
+    margin: auto;
+    width: 50%;
+    position: static;
+}
+
+/* Photography */
+.photo{
+    display: block;
+    margin: auto;
+    width: 30%;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#mobileNav {
+		display: none;
+}
+	
+.mobileNavBar {
+    background-color: #FFE8D6;
+    position: relative;
+    border: 1px solid;
+    border-color: #FFE8D6;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#siteName {
+    font-family: Didot;
+    align-self: center;
+    font-size: 1rem;
+    color: #FF9F1C;
+    text-align: center;
+}
+
+#hamburgerDiv {
+    align-self: center;                
+}
+
+#hamburgerBtn {
+    background-color: white;
+    font-size: 32px;
+    border: 10px;
+    border-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#theLinks {
+    background-color: rgba(255, 145, 0, 0.409);
+    display: none;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#theLinks a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: didot;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#theLinks a:hover{
+    color: black;
+}
+
+@media only screen and (max-width: 768px) {
+	#mobileNav {
+		display: block;
+	}
+}
+@media (max-width: 768px) {
+    .nav-bar {display: none;}
+    .web-title{display: none;}
+}
+
+.contact {
+    background-color: #fcb046;
+    margin: 20px;
+    padding: 10px;
+    font-family: Didot;
+    border-radius: 10px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    
+  }
+
+input[type=submit] {
+    background-color: #c1815f;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #c77244;
+  }
+  
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}

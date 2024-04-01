@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <title>Arlenis's Website</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- Meta tag to make this a responsive web page -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+    <!-- My Color Theme : #FF9F1C #FFBF69 #CB997E #FFE8D6-->
+    <body>
+    <div>
+		<!-- Title-->
+        <div class="web-title">
+            <h1>Arlenis Pena</h1>
+        </div>
+
+        <div id="mobileNav">
+            <div class="mobileNavBar">
+                <div id="siteName">
+                    <h1>Arlenis Pena</h1>
+                </div>
+                <div id="hamburgerDiv">
+                    <!--<a href="#" onclick="myDropdownFunction()">&#9776;</a>-->
+                    <button id="hamburgerBtn" onclick="myDropdownFunction()">&#9776;</button>
+                </div>
+  
+            </div>
+  
+            <div id="theLinks">
+                <a href="index.html">Home</a>
+                <a href="arlenis-pena_hw-2.html">My Photography</a>
+                <a href="web-poem.html">Web Poem</a>
+                <a href="contact-page.html">Contact</a>
+            </div>
+        </div>
+
+		<!-- Navbar-->
+        <div class="nav-bar">
+            <h3>
+                <li class="nav-link"><a href="index.html">Home</a></li>
+				<li class="nav-link"><a href="arlenis-pena_hw-2.html">My Photography</a></li>
+                <li class="nav-link"><a href="web-poem.html">Web Poem</a></li>
+                <li class="nav-link"><a href="contact-page.html">Contact</a></li>
+            </h3>
+        </div>
+
+		<!-- Photos-->
+        <h2>My Photos</h2>
+
+        <div class="my-photography">
+            <img class="photo" src="images/central-park.JPG" width="50%" alt="Central Park Bridge" />
+            <img class="photo" src="images/skyline.JPG" width="50%" alt="One World Trade Center" />
+            <img class="photo" src="images/sunrise.JPG" width="50%" alt="Sunrise Birds" />
+            <img class="photo" src="images/sunset.JPG" width="50%" alt="Sunset Pole" />
+            <img class="photo" src="images/the-met.JPG" width="50%" alt="The Met Stairs" />
+        </div>
+
+    </div>
+    </body>
+    	
+</html>
+
+<script>
+    function myDropdownFunction() {
+      var linksDiv = document.getElementById("theLinks");
+      if (linksDiv.style.display === "block") {
+        linksDiv.style.display = "none";
+      }
+		else {
+        linksDiv.style.display = "block";
+      }
+    }
+</script>
