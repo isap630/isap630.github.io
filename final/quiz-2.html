@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>i'm bored</title>
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400..800&display=swap" rel="stylesheet">
+        <script src="quiz.js"></script>
+
+        <!-- Meta tag to make this a responsive web page -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="web-quiz">
+            <img id="status-icon" src="my_icons/original.PNG" width="75%" >
+            <h2 id="question">Do you want to stay...</h2>
+            
+            <a href="quiz-3.html" id="link-1" onclick="changeHref(2)">
+                <button type="button" class="button-1" onMouseOver="mouseOverp2_B1FUNC()" onMouseOut="mouseOutp2FUNC()" ><h3>Indoors</h3></button>
+            </a>
+
+            <a href="quiz-3.html" id="link-2" onclick="changeHref(3)">
+                <button type="button" class="button-1"  onMouseOver="mouseOverp2_B2FUNC()" onMouseOut="mouseOutp2FUNC()" ><h3>Outdoors</h3></button>
+            </a>
+
+        </div>
+
+        <script>
+            // Function to extract query parameter from URL
+            function getQueryVariable(variable) {
+                //gives the query without the question mark
+                var query = window.location.search.substring(1);
+                //
+                
+                var pair = query.split("=");
+                if (pair[0] === variable) {
+                    let num = pair[1];
+                    return pair[1];
+                }
+                return null;
+            }
+    
+            // Get the value from the URL
+            var value = getQueryVariable("value");
+            if (value == null) {
+                // Use the value in your JavaScript code
+                console.log("No value found in the URL");
+            } 
+            
+            console.log("Value from the first page:", value);
+
+            function changeHref(h_num){
+                console.log(value);
+                if(value == 1 && h_num == 2){ //3
+                    var link = document.getElementById("link-1");
+                    // Change the href attribute value
+                    let total = Number(h_num) + Number(value)
+                    link.href = "quiz-3.html?value=" + total.toString();
+                }
+
+                else if(value == 1 && h_num == 3){ //4
+                    var link = document.getElementById("link-2");
+                    // Change the href attribute value
+                    let total = Number(h_num) + Number(value)
+                    link.href = "quiz-3.html?value=" + total.toString();
+                }
+                else if(value == 0 && h_num == 2){ //2
+                    var link = document.getElementById("link-1");
+                    // Change the href attribute value
+                    let total = Number(h_num) + Number(value)
+                    link.href = "quiz-3.html?value=" + total.toString();
+                }
+                else if(value == 0 && h_num == 3){ //3
+                    var link = document.getElementById("link-2");
+                    // Change the href attribute value
+                    let total = Number(h_num) + Number(value) + 2;
+                    link.href = "quiz-3.html?value=" + total.toString();
+                }
+            }
+        </script>
+    </body>
+</html>
