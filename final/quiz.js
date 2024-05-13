@@ -28,14 +28,14 @@ function mouseOutp2FUNC(){
 
 //page2 
 function mouseOverp3_B1FUNC(){
-    document.getElementById("status-icon").src = "my_icons/productive.png";
+    document.getElementById("status-icon").src = "my_icons/productive.PNG";
 }
 function mouseOverp3_B2FUNC(){
-    document.getElementById("status-icon").src = "my_icons/fun.png";
+    document.getElementById("status-icon").src = "my_icons/fun.PNG";
 }
 
 function mouseOutp3FUNC(){
-	document.getElementById("status-icon").src = "my_icons/original.png";
+	document.getElementById("status-icon").src = "my_icons/original.PNG";
 }
 
 
